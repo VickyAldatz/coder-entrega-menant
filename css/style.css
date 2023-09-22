@@ -1,0 +1,360 @@
+@font-face{
+    font-family: "mondresh-regular";
+    src:url(../fuentes/mondresh-4368347/MondreshRegular.otf)
+   
+}
+
+@font-face{
+    font-family: "berry-slab";
+    src: url(../fuentes/Berry-RegularFIll.otf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 100%;
+}
+/* Home */
+
+/* Encabezado*/
+.encabezado{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+.encabezado img{
+    width: 35%;
+}
+
+.menu{
+    display: flex;
+    width: 550px;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: "mondresh-regular";
+    color: black;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    margin-right: 5rem;
+    flex-wrap: wrap;    
+}
+
+.lista{
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px;
+    border-bottom: 2px solid white;
+    transition: all 0.5s ease;
+    flex-wrap: wrap;
+}
+
+.menu :hover{
+    border-color: rgb(76, 160, 76);
+}
+
+/* main*/
+
+.cuerpo-home{
+    width: 1200px;
+    margin: 2rem auto;
+    padding: 2 rem 2 rem;
+    margin-left: 4rem;
+}
+
+.titulos{
+    font-family: "mondresh-regular";
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;  
+    color: rgb(10, 57, 10);
+    margin-top: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.lista-titulos{
+    width: 100px;
+    display: flex;
+    padding: 4rem
+}
+
+.parrafos{
+    display: flex;
+    font-family: "mondresh-regular";
+    font-size: 15px;
+    color: rgb(10, 57, 10);
+    text-align: justify;
+    flex-direction: column;
+    margin: 10px 40px 0 40px;
+}
+
+.parrafos h3, h2, h1{
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Pie de pagina */
+
+.piedepagina{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    border-top: 2px solid black;
+    padding-top: 5rem;
+    list-style-type: none;
+    font-family: "berry-slab";
+    font-size: 1.8rem;
+    color: rgb(10, 57, 10);
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.algo{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    padding: 2 rem;
+    margin: 0 auto;
+}
+
+.parrafo-uno{
+    display: flex;
+    width: 300px;
+}
+
+.enlaces img{
+    width: 50px;
+}
+
+.parrafo-dos{
+    display: flex;
+}
+
+.algo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alguito{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.alguito-uno{
+    display: flex;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+/* Proyectos */
+
+.proye-foto{
+    display: flex;
+}
+
+.proyectos-fotos{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+}
+
+.proye-imagen{
+    width: 350px;
+    height: 350px;
+}
+
+.proye-titulo{
+    font-family: "mondresh-regular";
+    font-size: medium;
+    justify-content: center;
+}
+
+.proye-foto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: clamp (300px, 30%, 400px);
+}
+
+/* Servicios */
+
+#fotoservi{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 40px;
+}
+
+.servicios img{
+    width: 400px;
+    height: 300px;   
+}
+
+.servicios{
+    font-family: "mondresh-regular";
+    color: rgb(10, 57, 10);
+    margin: 40px 40px;
+}
+
+.servicios span{
+    font-size: x-large;
+}
+
+.articulos-container{
+    display: grid;
+    grid-template-rows: repeat (6, 1fr);
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.articulos-container span{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.articulos-container p{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 80px 5px 80px;
+}
+
+.articulos-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Contacto */
+
+.ofi{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 40px;
+}
+
+.misdatos{
+    font-family: "mondresh-regular";
+    font-size: 20px;
+    text-align: left;
+    list-style-type: none;
+    color: rgb(10, 57, 10);
+}
+
+.contactanos{
+    font-family: "mondresh-regular";
+    font-size: 20px;
+    text-align: center;
+    color: rgb(10, 57, 10);
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.misdatos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.datos{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* Nosotros */
+
+.hojas{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.marcas{
+    width: 35%;
+    height: 35%;
+    align-items: center;
+}
+
+.historia{
+    font-family: "mondresh-regular";
+    font-size: medium;
+    color: rgb(10, 57, 10);
+    text-align: justify;
+    max-width: 1200px;
+    margin: 20px 40px;
+}
+
+.clientes-container{  
+    font-family: "mondresh-regular";
+    font-size: large;
+    color: rgb(10, 57, 10);
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.clientes-container p{
+    display: flex;
+    margin: 20px 40px 20px 40px;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.grilla{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marcas img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Bootstrap*/
