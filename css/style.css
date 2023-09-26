@@ -31,6 +31,10 @@ a{
 img{
     width: 100%;
 }
+body{
+    background-color: 
+    rgb(209, 220, 211);
+}
 /* Home */
 
 /* Encabezado*/
@@ -40,8 +44,7 @@ img{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10px;
-    padding-left: 30px;
+    margin: 60px 40px 10px 40px;
 }
 
 .encabezado img{
@@ -70,15 +73,25 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+.encabezado{
+    display: flex;
+    max-width: 1200px;
+    margin: 6opx 40px 10px 40px;
+    background-color: white;
+}
+
 
 
 /* main*/
 
 .cuerpo-home{
-    width: 1200px;
-    margin: 2rem auto;
-    padding: 2 rem 2 rem;
-    margin-left: 4rem;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
 }
 
 .titulos{
@@ -90,28 +103,35 @@ img{
     margin-top: 10px;
     text-decoration: none;
     display: flex;
-    justify-content: space-around;
     padding: 3rem;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .lista-titulos{
     width: 100px;
     display: flex;
-    padding: 4rem
+    padding: 4rem;
+    display: flex;
+    place-content: center;
 }
 
 .parrafos{
     display: flex;
     font-family: "mondresh-regular";
-    font-size: 15px;
-    color: rgb(10, 57, 10);
+    font-size: 10px;
+    color: black;
     text-align: justify;
     flex-direction: column;
     margin: 10px 40px 0 40px;
+    padding-bottom: 40px;
 }
 
 .parrafos h3, h2, h1{
-    font-size: 30px;
+    font-size: large;
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -122,18 +142,18 @@ img{
 .piedepagina{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
-    border-top: 2px solid black;
     padding-top: 5rem;
+    padding-bottom: 5rem;
     list-style-type: none;
     font-family: "berry-slab";
     font-size: 1.8rem;
-    color: rgb(10, 57, 10);
+    color: rgb(7, 24, 7);
     margin-bottom: 5rem;
     max-width: 1200px;
     margin-left: 40px;
     margin-right: 40px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .algo{
@@ -151,6 +171,7 @@ img{
 
 .enlaces img{
     width: 50px;
+    margin: 2px;
 }
 
 .parrafo-dos{
@@ -187,8 +208,6 @@ img{
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
-    border-bottom: 2px solid black;
-    margin-top: 20px;
 }
 
 .proye-imagen{
@@ -219,7 +238,6 @@ img{
     display: flex;
     max-width: 1200px;
     justify-content: center;
-    margin: 0 40px;
 }
 
 .servicios img{
@@ -269,7 +287,6 @@ img{
 .ofi{
     display: flex;
     max-width: 1200px;
-    margin: 0 40px;
 }
 
 .misdatos{
@@ -286,9 +303,11 @@ img{
     text-align: center;
     color: rgb(10, 57, 10);
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
     justify-content: center;
+    max-width: 1000px;
+    margin-right: 0;
 }
 
 .misdatos-container{
@@ -296,6 +315,9 @@ img{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 80px 0;
+
 }
 
 .datos{
@@ -309,7 +331,6 @@ img{
     display: flex;
     max-width: 1200px;
     justify-content: center;
-    margin: 0 40px;
 }
 
 .marcas{
@@ -362,11 +383,19 @@ img{
     justify-content: center;
     align-items: center;
 }
+main {
+    background-color: white;
+    margin: 0 40px;
+}
+footer{
+    background-color: white;
+}
 /*Media query*/
 
 @media (min-width:681px){
     .menu :hover{
         border-color: rgb(76, 160, 76);
+        list-style-type: none;
         }
 }
 @media (max-width: 680px){
@@ -377,6 +406,11 @@ img{
         padding-top: 10px;
         padding-bottom: 10px;
     }   
+}
+@media (max-width:680px){
+    .lista{
+        border-bottom: none;
+    }
 }
 @media (max-width:680px){
     .piedepagina{
