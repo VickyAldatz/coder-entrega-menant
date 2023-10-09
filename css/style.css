@@ -1,483 +1,305 @@
-@font-face{
-    font-family: "mondresh-regular";
-    src:url(../fuentes/mondresh-4368347/MondreshRegular.otf)
-   
-}
-
-@font-face{
-    font-family: "berry-slab";
-    src: url(../fuentes/Berry-RegularFIll.otf);
-}
-
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-img{
-    width: 100%;
-}
-body{
-    background-color: 
-    rgb(209, 220, 211);
-}
-/* Home */
-
-/* Encabezado*/
-
-.encabezado{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    margin: 60px 40px 10px 40px;
-}
-
-.encabezado img{
-    width: 150px;
-}
-
-.menu{
-    display: flex;
-    width: 550px;
-    margin: 0, auto;
-    justify-content: space-around;
-    list-style-type: none;
-    font-family: "mondresh-regular";
-    color: black;
-    font-size: 1.3rem;
-    margin-right: 5rem; 
-}
-
-.lista{
-    font-size: 1.3rem;
-    color: black;
-    padding: 7px;
-    border-bottom: 2px solid white;
-    transition: all 0.5s ease;
-}
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-}
-.menu-container{
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px 40px 10px 40px;
+  background-color: white; }
+  header img {
+    width: 150px; }
+  header .menu-container {
     display: flex;
     align-items: center;
-}
-.encabezado{
-    display: flex;
-    max-width: 1200px;
-    margin: 6opx 40px 10px 40px;
-    background-color: white;
-}
+    margin-right: 40px; }
+    header .menu-container .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 550px;
+      margin: 0, auto;
+      margin-right: 20px; }
+    header .menu-container .lista {
+      font-family: "mondresh-regular";
+      color: black;
+      font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 20px;
+      border-bottom: 2px solid white;
+      transition: all 0.5s ease; }
+    header .menu-container .lista:hover {
+      border-bottom: #4ca04c;
+      list-style-type: none; }
 
-/* main*/
+main .foto-princi {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap; }
 
-.cuerpo-home{
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
-}
-
-.titulos{
+main .cuerpo {
+  background-color: white;
+  margin: 0 40px 0 40px; }
+  main .cuerpo .titulos {
     font-family: "mondresh-regular";
     list-style-type: none;
     font-size: 20px;
-    font-weight: bold;  
-    margin-top: 10px;
+    font-weight: 100;
     text-decoration: none;
+    margin-top: 10px;
     display: flex;
-    padding: 3rem;
     flex-wrap: wrap;
+    padding: 4rem;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-}
-
-.lista-titulos{
-    width: 100px;
+    gap: 15px; }
+  main .cuerpo .parrafos {
     display: flex;
-    padding: 4rem;
-    display: flex;
-    place-content: center;
-}
-
-.parrafos{
-    display: flex;
-    font-family: "mondresh-regular";
-    font-size: 10px;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-size: 18px;
     color: black;
     text-align: justify;
     flex-direction: column;
     margin: 10px 40px 0 40px;
-    padding-bottom: 40px;
-}
-
-.parrafos h3, h2, h1{
-    font-size: large;
+    padding-bottom: 40px; }
+  main .cuerpo .parrafos h3, main .cuerpo h2, main .cuerpo h1 {
+    font-size: x-large;
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+    margin: 20px, 0;
+    padding: 10px; }
 
-/* Pie de pagina */
-
-.piedepagina{
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    list-style-type: none;
-    font-family: "berry-slab";
-    font-size: 1.8rem;
-    color: black;
-    margin-bottom: 40px;
-    max-width: 1200px;
-    margin-left: 40px;
-    margin-right: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.algo{
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  list-style-type: none;
+  font-family: "berry-slab";
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bolder;
+  margin: 20px 40px 40px 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white; }
+  footer .algo {
     display: flex;
     justify-content: center;
-    max-width: 400px;
-    padding: 2 rem;
-    margin: 0 auto;
-}
-
-.parrafo-uno{
-    display: flex;
-    width: 300px;
-    justify-content: center;
-    text-align: center;
-}
-
-.enlaces img{
-    width: 50px;
-    margin: 2px;
-}
-
-.algo{
+    width: 400px;
+    margin: 0, auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    padding: 0 2rem; }
+    footer .algo .parrafo-uno {
+      display: flex;
+      width: 300px;
+      justify-content: center;
+      text-align: center; }
+    footer .algo .alguito {
+      display: flex;
+      margin-bottom: 1rem; }
+    footer .algo .alguito-uno {
+      display: flex;
+      margin-bottom: 1rem;
+      font-weight: bolder; }
+  footer .enlaces img {
+    width: 50px;
+    margin: 2px; }
 
-.alguito{
+@media (min-width: 780px) {
+  .menu:hover {
+    border-color: #4ca04c;
+    list-style-type: none; } }
+
+@media (max-width: 850px) {
+  .menu {
+    flex-direction: column;
+    margin: 10px, 0;
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+
+@media (max-width: 780px) {
+  .lista {
+    border-bottom: none; } }
+
+@media (max-width: 680px) {
+  .piedepagina {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px,0; } }
+
+@media (max-width: 680px) and (max-width: 680px) {
+  .parrafo-uno {
     display: flex;
-    margin-bottom: 1rem;
-}
+    align-content: center;
+    text-align: center; } }
 
-.alguito-uno{
+@media (max-width: 680px) {
+  .enlaces {
     display: flex;
-    margin-bottom: 1rem;
-    font-weight: bolder;
-}
+    flex-direction: row;
+    padding: 10px; }
+  .paginas {
+    padding: 10px; } }
 
-/* Proyectos */
+@font-face {
+  font-family: "mondresh-regular";
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.otf); }
 
-.proye-foto{
-    display: flex;
-}
+@font-face {
+  font-family: "berry-slab";
+  src: url(../fuentes/Berry-RegularFIll.otf); }
 
-.proyectos-fotos{
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    padding-top: 40px;
-}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
-.proye-imagen{
-    width: 350px;
-    height: 350px;
-    transition: 300ms
-}
+html {
+  font-size: 62.5%; }
 
-.proye-titulo{
-    font-family: "mondresh-regular";
-    font-size: medium;
-    justify-content: center;
-}
+ul {
+  list-style-type: none; }
 
-.proye-foto{
+a {
+  text-decoration: none;
+  color: black; }
+
+img {
+  width: 100%; }
+
+body {
+  background-color: #d1dcd3; }
+
+.proyectos-fotos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0, auto;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  margin: 10px 40px;
+  background-color: white; }
+  .proyectos-fotos .proye-foto {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     align-items: center;
     margin-bottom: 2rem;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: clamp (300px, 30%, 400px);
-}
+    flex-basis: clamp 300px, 30%, 400px; }
+    .proyectos-fotos .proye-foto .proye-imagen {
+      width: 350px;
+      height: 350px;
+      transition: 300ms; }
+    .proyectos-fotos .proye-foto .proye-titulo {
+      font-family: "mondresh-regular";
+      font-size: medium;
+      justify-content: center;
+      padding-top: 10px; }
 
-/* Servicios */
-.fotoservi{
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
-}
-
-.servicios img{
-    width: 400px;
-    height: 300px;   
-}
-
-.servicios{
-    font-family: "mondresh-regular";
-    color: black;
-    margin: 40px 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.servicios span{
-    font-size: large;
-}
-
-.articulos-container{
+.servicios {
+  margin: 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white; }
+  .servicios .articulos-container {
     display: grid;
-    grid-template-rows: repeat (6, 1fr);
+    grid-template-rows: repeat 6, 1fr;
     grid-template-columns: 1fr 2fr;
     gap: 10px;
-    margin: 20px 0;
-}
+    margin: 40px 0;
+    color: black; }
+    .servicios .articulos-container img {
+      width: 400px;
+      height: 300px;
+      margin-left: 40px; }
+    .servicios .articulos-container p {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 80px 5px 80px;
+      font-family: "Verdana, Geneva, Tahoma, sans-serif";
+      font-size: large;
+      text-align: justify; }
+      .servicios .articulos-container p span {
+        font-family: "mondresh-regular";
+        margin-bottom: 10px;
+        font-size: large; }
 
-.articulos-container span{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
+.us {
+  background-color: white;
+  margin: 0 40px; }
 
-.articulos-container p{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 80px 5px 80px;
-}
+.historia {
+  font-family: "mondresh-regular";
+  font-size: small;
+  color: black;
+  text-align: justify;
+  max-width: 1200px;
+  display: flex;
+  padding-top: 40px;
+  margin-top: 40px;
+  margin: 10px 40px 0 40px;
+  line-height: 30px;
+  word-spacing: 4px; }
+  .historia span {
+    font-size: medium; }
 
-.articulos-container{
-    display: flex;
-    justify-content: center;
-}
-
-/* Contacto */
-
-.ofi{
-    display: flex;
-    max-width: 1200px;
-}
-
-.misdatos{
-    font-family: "mondresh-regular";
-    font-size: 15px;
-    text-align: left;
-    list-style-type: none;
-    color: black;
-}
-
-.contactanos{
-    font-family: "mondresh-regular";
-    font-size: 15px;
-    text-align: center;
-    color: black;
-    display: flex;
-    margin-top: 40px;
-    justify-content: center;
-}
-
-.misdatos-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding: 80px 0;
-}
-
-.datos{
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-}
-.formu{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 50px;
-}
-.boton{
-    background-color: rgb(209, 220, 211);
-    border-radius: 5px;
-    padding: 5px;
-    color: black;
-    font-family: "mondresh-regular";
-}
-.boton:hover{
-    cursor: hand;
-    transform: scale (1.3);
-}
-/* Nosotros */
-
-.hojas{
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.marcas{
-    width: 35%;
-    height: 35%;
-    align-items: center;
-}
-
-.historia{
-    font-family: "mondresh-regular";
-    font-size: small;
-    color: black;
-    text-align: justify;
-    max-width: 1200px;
-    display: flex;
-    padding-top: 40px;
-    margin-top: 40px;
-    margin: 40px 40px 0 40px;
-}
-
-.clientes-container{  
-    font-family: "mondresh-regular";
-    font-size: medium;
-    color: black;
-    text-align: center;
-    margin: 30px 0 30px 0;
-}
-
-.clientes-container p{
-    display: flex;
-    margin: 20px 40px 20px 40px;
-    justify-content: center;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.grilla{
+.clientes-container {
+  font-family: "mondresh-regular";
+  font-size: medium;
+  color: black;
+  text-align: center;
+  margin: 30px 0; }
+  .clientes-container p {
+    margin-bottom: 30px; }
+  .clientes-container .grilla {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     margin-top: 20px;
-    justify-items: center;
-}
+    justify-items: center; }
 
-.marcas{
+.contacto-container {
+  background-color: white;
+  margin: 10px 40px;
+  font-family: "mondresh-regular";
+  color: black; }
+  .contacto-container .contactanos {
+    font-size: 18px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.marcas img{
+    padding-top: 40px; }
+  .contacto-container .misdatos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 80px 0; }
+    .contacto-container .misdatos-container .misdatos {
+      font-size: 15px;
+      text-align: left; }
+      .contacto-container .misdatos-container .misdatos .datos {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0; }
+  .contacto-container .formu {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main {
-    background-color: white;
-    margin: 0 40px;
-}
-footer{
-    background-color: white;
-}
-/*Media query*/
-
-@media (min-width:780px){
-    .menu :hover{
-        border-color: rgb(76, 160, 76);
-        list-style-type: none;
-        }
-}
-@media (max-width: 780px){
-    .menu{
-        flex-direction: column;
-        margin: 10px, 0;
-        padding-top: 10px;
-        padding-bottom: 10px;  
-    }   
-}
-@media (max-width:780px){
-    .lista{
-        border-bottom: none;
-    }
-}
-@media (max-width:680px){
-    .piedepagina{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px,0;
-    }
-    @media (max-width:680px){
-        .parrafo-uno{
-            display: flex;
-            align-content: center;
-            text-align: center;
-        }
-    }
-    .enlaces{
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
-    }
-    .paginas{
-        padding: 10px;
-    }
-}
-@media (max-width:768px){
-    .grilla{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap:10px;
-        justify-content: space-around; 
-        padding-bottom: 40px;
-    }
-}
-@media (max-width:680px){
-    .misdatos-container{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .formu{
-        display: grid;
-        justify-content: center;
-        margin: 0 20px;
-    }
-}
-@media (max-width:680px){
-    .articulos-container{
-        display: flex;
-        display: inline-block;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-@media (max-width:780px){
-    .articulos-container img{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 50px;
+    gap: 3px; }
+    .contacto-container .formu .boton {
+      background-color: #d1dcd3;
+      border-radius: 5px;
+      padding: 5px;
+      color: black;
+      font-family: "mondresh-regular"; }

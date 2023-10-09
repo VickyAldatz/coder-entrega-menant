@@ -1,0 +1,38 @@
+@mixin flex-completo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-align{
+    display: flex;
+    align-items: center;
+}
+
+@mixin justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin ajuste{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin titulo{
+    list-style-type: none;
+    font-size: $size-title;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+@mixin flex-marginb{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+@mixin direction-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

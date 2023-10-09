@@ -1,0 +1,48 @@
+.contacto-container{
+    background-color: $bg-color-cuadro;
+    margin: 10px 40px;
+    font-family: $font-titulo;
+    color: $text-color;
+
+    .contactanos{
+        font-size: $size-parrafo;
+        text-align: center;
+        @include justify-center;
+        padding-top: 40px;
+    }
+    .misdatos-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        padding: 80px 0;
+
+        .misdatos{
+            font-size: 15px;
+            text-align: left;
+
+            .datos{
+                @include justify-center;
+                margin: 25px 0;
+            }
+        }
+    }
+
+    .formu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 50px;
+        gap: 3px;
+
+        .boton{
+            background-color: rgb(209, 220, 211);
+            border-radius: 5px;
+            padding: 5px;
+            color: black;
+            font-family: "mondresh-regular";
+        }
+
+    }
+}

@@ -1,0 +1,32 @@
+.proyectos-fotos{
+    @include justify-center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: $auto;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    margin: 10px 40px;
+    background-color: $bg-color-cuadro;
+
+    .proye-foto{
+        @include direction-column;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: clamp (300px, 30%, 400px);
+
+        .proye-imagen{
+            width: 350px;
+            height: 350px;
+            transition: 300ms;
+        }
+
+        .proye-titulo{
+            font-family: $font-titulo;
+            font-size: medium;
+            justify-content: center;
+            padding-top: 10px;
+        }
+    }  
+}
+

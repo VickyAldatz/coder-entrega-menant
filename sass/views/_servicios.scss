@@ -1,0 +1,35 @@
+.servicios{
+    margin: 10px 40px;
+    @include ajuste;
+    background-color: $bg-color-cuadro;
+
+    .articulos-container{
+        display: grid;
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        margin: 40px 0;
+        color: $text-color;
+
+        img{
+            width: 400px;
+            height: 300px;
+            margin-left: 40px;
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 80px 5px 80px;
+            font-family: $font-parrafo;
+            font-size: large;
+            text-align: justify;
+            
+            span{
+                //@include justify-center;
+                font-family: $font-titulo;
+                margin-bottom: 10px;
+                font-size: large;
+            }
+        }
+    }
+}

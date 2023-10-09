@@ -1,0 +1,41 @@
+.us{
+    background-color: $bg-color-cuadro;
+    margin: 0 40px;
+}
+.historia{
+    font-family: $font-titulo;
+    font-size: small;
+    color: $text-color;
+    text-align: justify;
+    max-width: 1200px;
+    display: flex;
+    padding-top: 40px;
+    margin-top: 40px;
+    margin: 10px 40px 0 40px;
+    line-height: 30px;
+    word-spacing: 4px;
+
+    span{
+        font-size: medium;
+    }
+}
+.clientes-container{
+    font-family: $font-titulo;
+    font-size: medium;
+    color: $text-color;
+    text-align: center;
+    margin: 30px 0;
+
+    p{
+        margin-bottom: 30px;
+    }
+
+    .grilla{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        margin-top: 20px;
+        justify-items: center;
+    }
+}
