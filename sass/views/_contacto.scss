@@ -27,22 +27,32 @@
                 margin: 25px 0;
             }
         }
-    }
-
-    .formu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0 50px;
-        gap: 3px;
-
-        .boton{
-            background-color: rgb(209, 220, 211);
-            border-radius: 5px;
-            padding: 5px;
-            color: black;
-            font-family: "mondresh-regular";
+        .formu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0 50px;
+            gap: 3px;
+    
+            .boton{
+                background-color: rgb(209, 220, 211);
+                border-radius: 5px;
+                padding: 5px;
+                color: black;
+                font-family: "mondresh-regular";
+            }
         }
-
     }
-}
+   
+
+    @media (max-width:780px){
+        .misdatos-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        } 
+    }
+ }
+
+
+

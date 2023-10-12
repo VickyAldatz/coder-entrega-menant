@@ -29,17 +29,16 @@ header {
       padding: 20px;
       border-bottom: 2px solid white;
       transition: all 0.5s ease; }
-    header .menu-container .lista:hover {
+    header .menu-container li:hover {
       border-bottom: #4ca04c;
       list-style-type: none; }
 
-main .foto-princi {
-  max-width: 1200px;
+main .foto-principal {
   display: flex;
+  max-width: 1200px;
   justify-content: center;
   margin-left: 40px;
-  display: flex;
-  flex-wrap: wrap; }
+  margin-right: 40px; }
 
 main .cuerpo {
   background-color: white;
@@ -120,25 +119,32 @@ footer {
     flex-direction: column;
     margin: 10px, 0;
     padding-top: 10px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px;
+    position: relative;
+    max-width: 200px; } }
 
-@media (max-width: 780px) {
-  .lista {
-    border-bottom: none; } }
+.enlaces {
+  padding: 0 60px;
+  margin: 0 60px; }
 
-@media (max-width: 680px) {
+@media (max-width: 400px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 935px) {
   .piedepagina {
     flex-direction: column;
     align-items: center;
     padding: 20px,0; } }
 
-@media (max-width: 680px) and (max-width: 680px) {
+@media (max-width: 935px) and (max-width: 680px) {
   .parrafo-uno {
     display: flex;
     align-content: center;
     text-align: center; } }
 
-@media (max-width: 680px) {
+@media (max-width: 935px) {
   .enlaces {
     display: flex;
     flex-direction: row;
@@ -218,11 +224,12 @@ body {
     .servicios .articulos-container img {
       width: 400px;
       height: 300px;
-      margin-left: 40px; }
+      margin-left: 40px;
+      margin-right: 40px; }
     .servicios .articulos-container p {
       display: flex;
       flex-direction: column;
-      margin: 20px 80px 5px 80px;
+      margin: 20px 40px 5px 40px;
       font-family: "Verdana, Geneva, Tahoma, sans-serif";
       font-size: large;
       text-align: justify; }
@@ -230,6 +237,18 @@ body {
         font-family: "mondresh-regular";
         margin-bottom: 10px;
         font-size: large; }
+  @media (max-width: 915px) {
+    .servicios .articulos-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center; }
+      .servicios .articulos-container p {
+        margin: 20px 80px;
+        max-width: 400px; }
+      .servicios .articulos-container .articulos-container img {
+        display: flex;
+        margin-right: 40px; } }
 
 .us {
   background-color: white;
@@ -264,7 +283,17 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     margin-top: 20px;
+    padding: 0 20px;
     justify-items: center; }
+  @media (max-width: 768px) {
+    .clientes-container .grilla {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 20px;
+      padding-bottom: 40px; }
+      .clientes-container .grilla .marcas {
+        padding: 10px 0; } }
 
 .contacto-container {
   background-color: white;
@@ -291,15 +320,20 @@ body {
         display: flex;
         justify-content: center;
         margin: 25px 0; }
-  .contacto-container .formu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 50px;
-    gap: 3px; }
-    .contacto-container .formu .boton {
-      background-color: #d1dcd3;
-      border-radius: 5px;
-      padding: 5px;
-      color: black;
-      font-family: "mondresh-regular"; }
+    .contacto-container .misdatos-container .formu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 50px;
+      gap: 3px; }
+      .contacto-container .misdatos-container .formu .boton {
+        background-color: #d1dcd3;
+        border-radius: 5px;
+        padding: 5px;
+        color: black;
+        font-family: "mondresh-regular"; }
+  @media (max-width: 780px) {
+    .contacto-container .misdatos-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; } }

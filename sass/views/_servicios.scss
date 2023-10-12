@@ -15,11 +15,12 @@
             width: 400px;
             height: 300px;
             margin-left: 40px;
+            margin-right: 40px;
         }
         p{
             display: flex;
             flex-direction: column;
-            margin: 20px 80px 5px 80px;
+            margin: 20px 40px 5px 40px;
             font-family: $font-parrafo;
             font-size: large;
             text-align: justify;
@@ -32,4 +33,23 @@
             }
         }
     }
-}
+
+    @media (max-width:915px){
+        .articulos-container{
+            @include ajuste;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                margin: 20px 80px;
+                max-width: 400px;
+            }
+            
+            .articulos-container img{
+                display: flex;
+                margin-right: 40px;  
+            }
+            }
+        }
+    }
+
