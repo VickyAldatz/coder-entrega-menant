@@ -51,5 +51,19 @@
             }
             }
         }
+    @media (max-width:560px){
+        .articulos-container{
+            max-width: 300px;
+            background-color: red;
+
+            .articulos-container p{
+                color: red;
+                }
+            .articulos-container img{
+                width: 300px;
+            }
+            }   
+        }
+
     }
 
