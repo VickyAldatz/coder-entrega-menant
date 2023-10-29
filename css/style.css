@@ -153,17 +153,11 @@ footer {
 
 @font-face {
   font-family: "mondresh-regular";
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.otf);
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.ttf);
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.woff);
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.png);
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.bmp);
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.otb); }
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.otf); }
 
 @font-face {
   font-family: "berry-slab";
-  src: url(../fuentes/Berry-RegularFIll.otf);
-  src: url(../fuentes/Berry-RegularFIll.ttf); }
+  src: url(../fuentes/Berry-RegularFIll.otf); }
 
 * {
   margin: 0%;
