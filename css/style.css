@@ -3,7 +3,7 @@ header {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 60px 40px 10px 40px;
   background-color: white; }
   header img {
@@ -35,7 +35,7 @@ header {
 
 main .foto-principal {
   display: flex;
-  max-width: 1200px;
+  max-width: 100%;
   justify-content: center;
   margin-left: 40px;
   margin-right: 40px; }
@@ -153,11 +153,17 @@ footer {
 
 @font-face {
   font-family: "mondresh-regular";
-  src: url(../fuentes/mondresh-4368347/MondreshRegular.otf); }
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.otf);
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.ttf);
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.woff);
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.png);
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.bmp);
+  src: url(../fuentes/mondresh-4368347/MondreshRegular.otb); }
 
 @font-face {
   font-family: "berry-slab";
-  src: url(../fuentes/Berry-RegularFIll.otf); }
+  src: url(../fuentes/Berry-RegularFIll.otf);
+  src: url(../fuentes/Berry-RegularFIll.ttf); }
 
 * {
   margin: 0%;
@@ -202,11 +208,11 @@ body {
       width: 350px;
       height: 350px;
       transition: 300ms; }
-    .proyectos-fotos .proye-foto .proye-titulo {
-      font-family: "mondresh-regular";
-      font-size: medium;
-      justify-content: center;
-      padding-top: 10px; }
+  .proyectos-fotos .proye-titulo {
+    font-family: "mondresh-regular";
+    font-size: medium;
+    justify-content: center;
+    padding-top: 10px; }
 
 .servicios {
   margin: 10px 40px;
@@ -221,8 +227,7 @@ body {
     margin: 40px 0;
     color: black; }
     .servicios .articulos-container img {
-      width: 400px;
-      height: 300px;
+      width: 80%;
       margin-left: 40px;
       margin-right: 40px; }
     .servicios .articulos-container p {

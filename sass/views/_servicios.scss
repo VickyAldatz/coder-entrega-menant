@@ -12,8 +12,7 @@
         color: $text-color;
 
         img{
-            width: 400px;
-            height: 300px;
+            width: 80%;
             margin-left: 40px;
             margin-right: 40px;
         }
@@ -43,7 +42,6 @@
             p{
                 margin: 20px 80px;
                 max-width: 400px;
-                color: aqua;
             }
             
             .articulos-container img{
@@ -52,26 +50,6 @@
             }
             }
         }
-    @media (max-width:560px){
-        .servicios{
-            max-width: 300px;
-
-            .articulos-container p{
-                color: red;
-                }
-            .articulos-container img{
-                width: 300px;
-            }
-        }   
-    }
+   
 }
 
-@media (max-width:560px){
-    .servicios{
-        background-color: red;
-
-        .articulos-container{
-            background-color: green;
-        }
-    }
-}
