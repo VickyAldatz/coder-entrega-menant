@@ -223,7 +223,9 @@ body {
     .servicios .articulos-container img {
       width: 80%;
       margin-left: 40px;
-      margin-right: 40px; }
+      margin-right: 40px;
+      padding-top: 30px;
+      align-content: center; }
     .servicios .articulos-container p {
       display: flex;
       flex-direction: column;
